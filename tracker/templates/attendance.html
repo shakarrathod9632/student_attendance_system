@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance Records</title>
+<style>
+body{font-family:Arial;background:#f7f9fa;}
+table{width:80%;margin:30px auto;border-collapse:collapse;background:white;}
+th,td{border:1px solid #ddd;padding:10px;text-align:center;}
+th{background:#8e44ad;color:white;}
+.header{text-align:center;background:#6c3483;padding:15px;color:white;}
+</style>
+</head>
+<body>
+
+<div class="header"><h2>Attendance Records</h2></div>
+
+<table>
+<tr><th>Student</th><th>Date</th><th>Status</th></tr>
+{% for a in attendance %}
+<tr>
+<td>{{ a.student.name }}</td>
+<td>{{ a.date }}</td>
+<td>{{ a.status }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
+

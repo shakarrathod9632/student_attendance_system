@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Attendance Stats</title>
+<style>
+body{background:#ecf0f1;font-family:Arial;}
+.box{width:60%;margin:40px auto;background:white;padding:30px;text-align:center;border-radius:10px;box-shadow:0 0 10px #bbb;}
+.stat{font-size:22px;margin:15px;color:#2c3e50;}
+h2{color:#2c3e50;}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Attendance Statistics 📊</h2>
+<div class="stat">Total Students: {{ total }}</div>
+<div class="stat">Present: ✅ {{ present }}</div>
+<div class="stat">Absent: ❌ {{ absent }}</div>
+<div class="stat">Late: ⏰ {{ late }}</div>
+</div>
+
+</body>
+</html>
+
+
